@@ -1,0 +1,77 @@
+<mat-card style="width:100%; background: #044CA6"></mat-card>
+<div fxFlexFill fxLayoutAlign="space-around" class="login">
+
+  <div fxFlex="300px" fxAlign="center">
+
+    <div class="register">
+      <mat-card style="width: 30%;
+    margin-left: 35%;" class="example-card">
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+          <div>
+            <mat-card><h1>Sign Up</h1>
+              <h4 style="color:grey">Please fill this form to create an account.</h4>
+            </mat-card>
+
+          </div>
+          <mat-toolbar class="logo" fxLayoutAlign="center center">
+            <div fxLayoutAlign="center center">
+
+
+            </div>
+          </mat-toolbar>
+          <mat-card-content fxLayout="column">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <mat-form-field>
+                <input matInput type="text" placeholder="First Name" formControlName="firstNameFormControl">
+                <mat-error  *ngIf="userForm.controls['firstNameFormControl'].hasError('required')">
+                </mat-error>
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput type="text" placeholder="Last Name" formControlName="lastNameFormControl">
+                <mat-error *ngIf="userForm.controls['lastNameFormControl'].hasError('required')">
+                </mat-error>
+              </mat-form-field>
+
+              <mat-form-field>
+                <input matInput type="text" placeholder="email" formControlName="emailFormControl">
+                <mat-error *ngIf="userForm.controls['emailFormControl'].hasError('required')">
+                </mat-error>
+              </mat-form-field>
+
+
+              <mat-form-field>
+                <input matInput type="text" placeholder="gender" formControlName="genderFormControl">
+                <mat-error *ngIf="userForm.controls['genderFormControl'].hasError('required')">
+                </mat-error>
+              </mat-form-field>
+
+              <mat-form-field>
+                <input matInput type="number" placeholder="Phone" formControlName="phoneFormControl">
+                <mat-error *ngIf="userForm.controls['phoneFormControl'].hasError('required')">
+                </mat-error>
+              </mat-form-field>
+
+              <mat-form-field>
+                <input  matInput type="password" placeholder="password" formControlName="passwordFormControl">
+              </mat-form-field>
+
+              <mat-form-field>
+                <input  id="ork-input-pwd" matInput type="password" placeholder="confirm password" formControlName="passwordFormControl">
+              </mat-form-field>
+
+
+              <mat-form-field>
+                <textarea matInput type="text" placeholder="Address" formControlName="addressFormControl"></textarea>
+                <mat-error *ngIf="userForm.controls['addressFormControl'].hasError('required')">
+                </mat-error>
+              </mat-form-field>
+            </div>
+          </mat-card-content>
+          <button id="ork-btn-login" mat-raised-button class="mat-raised login-login-button" type="submit" align="left">Register</button>
+          <button style="margin-left:2%" mat-raised-button class="mat-raised login-login-button" type="button" (click)="cancel()" align="left">Cancel</button>
+        </form>
+      </mat-card>
+
+    </div>
+  </div>
+</div>

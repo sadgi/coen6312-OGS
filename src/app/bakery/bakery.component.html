@@ -1,0 +1,69 @@
+<mat-card style="width:100%; height:35px; background: #044CA6; display:flex; justify-content: space-between"><h2 style="color:white">Bakery Items List</h2>
+  <button (click)="gotocart()" mat-raised-button type="button" align="right" style="margin-right: 2%;"><strong>GoToCart</strong></button>
+</mat-card>
+
+<table style="width:94%; margin-left:3%; margin-top: 30px;">
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price($)</th>
+    <th>Add</th>
+  </tr>
+  <tr id="r1" #t1>
+    <td>Bread</td>
+    <td>Whole wheat bread</td>
+    <td>3.5</td>
+    <td><button (click)="add(t1)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+  <tr id="r3" #t3>
+    <td>Choclates</td>
+    <td>Dark choclates</td>
+    <td>8.5</td>
+    <td><button (click)="add(t3)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+  <tr id="r4" #t4>
+    <td>Beans</td>
+    <td>Black Turtle Beans</td>
+    <td>4.5</td>
+    <td><button (click)="add(t4)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+  <tr id="r6" #t6>
+    <td>Muffins</td>
+    <td>Choclate Muffins</td>
+    <td>2.75</td>
+    <td><button (click)="add(t6)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+
+  <tr id="r7" #t7>
+    <td>Multi Grain Bread</td>
+    <td>Whole wheat bread</td>
+    <td>3.75</td>
+    <td><button (click)="add(t7)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+
+  <tr id="r8" #t8>
+    <td>Pita</td>
+    <td>Whole wheat pita</td>
+    <td>1.5</td>
+    <td><button (click)="add(t8)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+
+
+  <tr id="r9" #t9>
+    <td>Santosh Naan</td>
+    <td>Fried Naan </td>
+    <td>5.5</td>
+    <td><button (click)="add(t9)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+
+
+  <tr id="r10" #t10>
+    <td>Tortillas</td>
+    <td>Casa Spice Tortillas </td>
+    <td>4</td>
+    <td><button (click)="add(t10)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+
+
+
+</table>

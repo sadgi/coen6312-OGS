@@ -1,0 +1,14 @@
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('../../assets/category.jpg');
+  background-size: cover;
+}
+
+
+.home {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}

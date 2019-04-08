@@ -1,0 +1,54 @@
+<mat-card style="width:100%; height:35px; background: #044CA6; display:flex; justify-content: space-between">
+  <h2 style="color:white">Meat&Poultry Items List</h2>
+  <button (click)="gotocart()" mat-raised-button type="button" align="right" style="margin-right: 2%;"><strong>GoToCart</strong></button>
+</mat-card>
+
+<table style="width:94%; margin-left:3%; margin-top: 30px;">
+  <tr id="r14" #t14>
+    <td>Chicken</td>
+    <td>Organic Chicken</td>
+    <td>7.5</td>
+    <td><button (click)="add(t14)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+
+  <tr id="r16" #t16>
+    <td>Beef</td>
+    <td>Beef cubes</td>
+    <td>12</td>
+    <td><button (click)="add(t16)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+
+
+  <tr  id="r17" #t17>
+    <td>Lamb</td>
+    <td>Lamb Sticks</td>
+    <td>9.75</td>
+    <td><button (click)="add(t17)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+
+
+  <tr id="r18" #t18>
+    <td>Pork</td>
+    <td>Smoked Salami</td>
+    <td>8.5</td>
+    <td><button (click)="add(t18)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+
+
+  <tr id="r19" #t19>
+    <td>Salmon</td>
+    <td>Fresh Salmon</td>
+    <td>13.5</td>
+    <td><button (click)="add(t19)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+
+
+  <tr id="r20" #t20>
+    <td>Tin</td>
+    <td>Tin Packed Tuna</td>
+    <td>2.5</td>
+    <td><button (click)="add(t20)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+
+
+</table>

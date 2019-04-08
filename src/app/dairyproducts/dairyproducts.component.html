@@ -1,0 +1,52 @@
+<mat-card style="width:100%; height:35px; background: #044CA6; display:flex; justify-content: space-between">
+  <h2 style="color:white">Dairy Items List</h2>
+  <button (click)="gotocart()" mat-raised-button type="button" align="right" style="margin-right: 2%;"><strong>GoToCart</strong></button>
+</mat-card>
+
+<table style="width:94%; margin-left:3%; margin-top: 30px;">
+  <tr id="r1" #t1>
+    <td>Bread</td>
+    <td>Whole wheat bread</td>
+    <td>3.5</td>
+    <td><button (click)="add(t1)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+  <tr id="r3" #t3>
+    <td>Choclates</td>
+    <td>Dark choclates</td>
+    <td>8.5</td>
+    <td><button (click)="add(t3)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+  <tr id="r11" #t11>
+    <td>Milk</td>
+    <td>Lactancia Milk </td>
+    <td>3.25</td>
+    <td><button (click)="add(t11)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+
+
+
+  <tr id="r12" #t12>
+    <td>Eggs</td>
+    <td>Nutri Brown Eggs </td>
+    <td>5.5</td>
+    <td><button (click)="add(t12)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+
+
+  <tr id="r13" #t13>
+    <td>Butter</td>
+    <td>Lactancia Butter</td>
+    <td>6.5</td>
+    <td><button (click)="add(13)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+
+
+  <tr id="r13" #t13>
+    <td>Cream</td>
+    <td>Thick white cream</td>
+    <td>9.5</td>
+    <td><button (click)="add(t13)" mat-raised-button color="primary">Add</button></td>
+  </tr>
+
+
+</table>

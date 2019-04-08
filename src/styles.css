@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+/*@import "../node_modules/ng-pick-datetime/assets/style/picker.min.css";*/
+/*@import "_variables.scss";*/
+/*@import "_orkui.scss";*/
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+//width: 99%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.margin-5-both {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.padding-top-20 {
+  padding-top: 20px;
+}
+
+.padding-both-15 {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: black;
+}
+
+.padding-bottom-20 {
+  padding-bottom: 20px;
+}
+
+a {
+  cursor: pointer;
+}
+
+.mat-drawer-content {
+  overflow: hidden !important;
+}
+
+.mat-expansion-panel {
+
+.mat-expansion-panel-header{
+  height:30px;
+}
+.mat-expansion-panel-body {
+  padding: 0 0 1px 24px;
+}
+
+
+@media screen and (max-width: 400px) {
+  .mat-expansion-panel-body {
+    padding: 0;
+  }
+
+
+}
+
+}
+
+mat-toolbar {
+
+.mat-toolbar-row {
+
+}
+.mat-button {
+  color: white;
+}
+
+.mat-icon-button {
+  color: white;
+
+}
+
+}
+
+.fill-space {
+// This fills the remaining space, by using flexbox.
+// Every toolbar row uses a flexbox row layout.
+flex: 1 1 auto;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+/*md-toolbar {
+  margin: -24px 0 24px -24px;
+  width: calc(100% + 48px);
+}*/
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background: #BDBDBD;
+
+
+}
+.mat-sort-header-button {
+  margin: 0 0 0 3px;
+  overflow: hidden;
+}
